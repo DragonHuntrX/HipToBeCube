@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://db0nncw47misk"]
+
+[ext_resource type="ArrayMesh" uid="uid://br5sc8p5b17vc" path="res://landscape.obj" id="1_rx04d"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="2_njdhr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Landscape" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.320107, 3.57628e-07, -0.69241)
+mesh = ExtResource("1_rx04d")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.307913, 0)
+script = ExtResource("2_njdhr")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.79211, 0)
+light_energy = 4.715
+light_indirect_energy = 8.645
+light_volumetric_fog_energy = 14.925
+light_size = 10.455
